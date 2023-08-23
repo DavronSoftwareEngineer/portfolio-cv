@@ -28,7 +28,7 @@ export const HomeStyle = styled.div`
                 color: #211431;
                 margin: 0;
                 font-weight: bold;
-            .title-typed{
+            span{
                 font-size: 1.4rem;
                 font-family: sans-serif;
                 letter-spacing: 1px;
