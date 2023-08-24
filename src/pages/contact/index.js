@@ -57,18 +57,17 @@ function Contact() {
 
       <Grid container mt={'50px'} columnSpacing={3}>
         <Grid item xs={6}>
-        <Animated
-            style={{height: "100%"}}
-              animationIn="zoomIn"
-              animationOut="zoomIn"
-              isVisible={true}
-            >
           <Box sx={{
             boxShadow: 5,
             borderRadius: '5px',
             p: 3,
             height: "100%",
           }}>
+            <Animated
+              animationIn="zoomIn"
+              animationOut="zoomIn"
+              isVisible={true}
+            >
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -95,6 +94,12 @@ function Contact() {
                 </Typography>
               </Box>
             </Box>
+            </Animated>
+            <Animated
+              animationIn="zoomIn"
+              animationOut="zoomIn"
+              isVisible={true}
+            >
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -122,6 +127,12 @@ function Contact() {
                 </Typography>
               </Box>
             </Box>
+            </Animated>
+            <Animated
+              animationIn="zoomIn"
+              animationOut="zoomIn"
+              isVisible={true}
+            >
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -148,17 +159,18 @@ function Contact() {
                 </Typography>
               </Box>
             </Box>
-
+            </Animated>
             <Box sx={{
               width: "100%",
               height: "400px",
               mt: 3,
               borderRadius: '5px',
+              
             }}>
               <MapBox/>
             </Box>
           </Box>
-          </Animated>
+          {/* </Animated> */}
         </Grid>
         <Grid item xs={6}>
         <Animated
