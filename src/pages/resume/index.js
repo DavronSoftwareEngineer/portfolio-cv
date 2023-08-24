@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Animated } from "react-animated-css";
 
 
 
@@ -97,6 +98,7 @@ function Resume() {
         }}
       >
         <Box component={"span"}>
+        <Animated animationIn="zoomInDown" animationOut="zoomInDown" isVisible={true}>
           <Typography
             variant="h4"
             component={"h4"}
@@ -130,10 +132,12 @@ function Resume() {
             quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
             fugiat sit in iste officiis commodi quidem hic quas.
           </Typography>
+          </Animated>
         </Box>
 
         <Grid container mt={4} columnSpacing={4}>
           <Grid item xs={6}>
+          <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
             <Typography variant="h4" component={"h4"}>
               Sumary
             </Typography>
@@ -202,8 +206,10 @@ function Resume() {
                 </Typography>
               </Typography>
             </Box>
+            </Animated>
           </Grid>
           <Grid item xs={6}>
+          <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
             <Typography variant="h4" component={'h4'} 
             sx={{
               mb: 2,
@@ -270,9 +276,12 @@ function Resume() {
                 }}
                 >{item.text}</Typography>
               </Box>
+              
             ))}
+            </Animated>
           </Grid>
           <Grid item xs={6}>
+          <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
             <Typography variant="h4" component={"h4"} 
             sx={{
               mb: 2,
@@ -339,6 +348,7 @@ function Resume() {
                 </Typography>
               </Box>
             ))}
+            </Animated>
           </Grid>
         </Grid>
       </Box>

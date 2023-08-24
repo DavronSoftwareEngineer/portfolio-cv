@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react'
+import { Animated } from 'react-animated-css';
 
 const SkillsData = [
   {
@@ -78,6 +79,7 @@ function Skills() {
         }}
       >
         <Box component={"span"}>
+        <Animated animationIn="zoomInDown" animationOut="zoomInDown" isVisible={true}>
           <Typography
             variant="h4"
             component={"h4"}
@@ -109,10 +111,12 @@ function Skills() {
             quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
             fugiat sit in iste officiis commodi quidem hic quas.
           </Typography>
+          </Animated>
         </Box>
         <Grid container mt={1} columnSpacing={3} rowSpacing={3}>
           {SkillsData.map((item, index) => (
             <Grid item xs={6} key={item.id}>
+              <Animated animationIn="zoomIn" animationOut="zoomIn" isVisible={true}>
               <Box
                 component={"span"}
                 sx={{
@@ -161,6 +165,7 @@ function Skills() {
                   }}
                 ></Box>
               </Box>
+              </Animated>
             </Grid>
           ))}
         </Grid>

@@ -25,12 +25,13 @@ export const AboutStyle = styled.div`
     
   }
   .grid-wrap {
-    margin-top: 20px;
+    margin-top: 70px;
       .grid {
         img{
             border-radius: 5px;
             width: 100%;
             height: 60%;
+            object-fit: cover;
         }
       }
       .grid1 {

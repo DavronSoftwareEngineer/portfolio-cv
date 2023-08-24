@@ -4,6 +4,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import MapBox from "../../componenets/mapbox-gl";
+import { Animated } from "react-animated-css";
 function Contact() {
   return (
     <Box
@@ -12,6 +13,12 @@ function Contact() {
       }}
     >
       <Box component={"span"}>
+      <Animated
+            style={{height: "100%"}}
+              animationIn="zoomIn"
+              animationOut="zoomIn"
+              isVisible={true}
+            >
         <Typography
           variant="h4"
           component={"h4"}
@@ -45,10 +52,17 @@ function Contact() {
           quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
           fugiat sit in iste officiis commodi quidem hic quas.
         </Typography>
+        </Animated>
       </Box>
 
       <Grid container mt={'50px'} columnSpacing={3}>
         <Grid item xs={6}>
+        <Animated
+            style={{height: "100%"}}
+              animationIn="zoomIn"
+              animationOut="zoomIn"
+              isVisible={true}
+            >
           <Box sx={{
             boxShadow: 5,
             borderRadius: '5px',
@@ -144,8 +158,15 @@ function Contact() {
               <MapBox/>
             </Box>
           </Box>
+          </Animated>
         </Grid>
         <Grid item xs={6}>
+        <Animated
+            style={{height: "100%"}}
+              animationIn="zoomIn"
+              animationOut="zoomIn"
+              isVisible={true}
+            >
           <Box component={"div"} sx={{
             boxShadow: 5,
             p: 3,
@@ -208,6 +229,7 @@ function Contact() {
               >Xabarni jo'natish</Button>
             </Box>
           </Box>
+          </Animated>
         </Grid>
       </Grid>
     </Box>

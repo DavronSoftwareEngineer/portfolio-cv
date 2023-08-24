@@ -2,10 +2,12 @@ import React from "react";
 import { AboutStyle } from "./style";
 import { Grid, Typography } from "@mui/material";
 import user from "../dashboard/photo/user.jpg";
+import { Animated } from "react-animated-css";
 
 function About() {
   return (
     <AboutStyle>
+      <Animated animationIn="zoomInDown" animationOut="zoomInDown" isVisible={true}>
       <div className="wrapabout">
         <h2 className="title">
           <span>About</span>
@@ -17,11 +19,13 @@ function About() {
           fugiat sit in iste officiis commodi quidem hic quas.
         </p>
       </div>
+      </Animated>
       <Grid container columnSpacing={3} className="grid-wrap" component={'div'}>
         <Grid item xs={4} className="grid">
           <img src={user} alt="" />
         </Grid>
         <Grid item xs={8} className="grid1" component={'div'}>
+        <Animated animationIn="slideInRight" animationOut="slideInRight" isVisible={true}>
           <Typography variant="h4" className="typ-title">
             Wep Developer
           </Typography>
@@ -29,6 +33,7 @@ function About() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
+          
           <Grid container className="grid-cont">
             <Grid item xs={6} className="grid-6">
               <ul>
@@ -68,6 +73,7 @@ function About() {
             neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui
             repellendus omnis culpa magni laudantium dolores.
           </p>
+          </Animated>
         </Grid>
       </Grid>
     </AboutStyle>

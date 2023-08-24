@@ -5,11 +5,12 @@ import { FaFacebookF, FaYoutube, FaBuffer } from "react-icons/fa6";
 import { AiOutlineHome } from "react-icons/ai";
 import { LuUser } from "react-icons/lu";
 import { ImFileText2 } from "react-icons/im";
+import { GiSkills } from "react-icons/gi";
 import {
   BiLogoTelegram,
   BiLogoInstagram,
   BiLogoLinkedin,
-  BiServer,
+  BiUser
 } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
@@ -32,7 +33,7 @@ const menus = [
   {
     id: 3,
     title: "Skills",
-    icon: <BiServer style={{ color: "#fff", fontSize: "1.5rem" }} />,
+    icon: <GiSkills style={{ color: "#fff", fontSize: "1.5rem" }} />,
     to: "/skills",
   },
   {
@@ -50,7 +51,7 @@ const menus = [
   {
     id: 6,
     title: "Contact",
-    icon: <BiServer style={{ color: "#fff", fontSize: "1.5rem" }} />,
+    icon: <BiUser style={{ color: "#fff", fontSize: "1.5rem" }} />,
     to: "/contact",
   },
 ];
@@ -84,7 +85,7 @@ function Layout({ children }) {
           <div className="top-wrap">
             <div className="wrap">
               <div className="wrap-img">
-                <img src={user} alt="" />
+                <img src={user} alt=""/>
               </div>
             </div>
             <p className="user-name">Davron Mamatov</p>
